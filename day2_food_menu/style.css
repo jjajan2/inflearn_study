@@ -1,0 +1,101 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  color: #333;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #fffafc;
+}
+
+header {
+  text-align: center;
+  padding-top: 40px;
+}
+
+header h1 {
+  font-size: 38px;
+  color: #f06bab;
+  letter-spacing: -0.4px;
+}
+
+header nav {
+  margin-top: 20px;
+  border-bottom: solid 1px #ffdff0;
+}
+
+header nav ul {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.category_btn {
+  flex: 1;
+  line-height: 52px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.category_btn.on {
+  border-bottom: solid 2px #f06bab;
+  font-weight: 500;
+}
+
+.icecream_list {
+  display: flex;
+  max-width: 600px;
+  min-height: 40vh;
+  flex-flow: column;
+  gap: 30px;
+  margin: 60px auto;
+}
+
+.icecream_item {
+  display: flex;
+  gap: 30px;
+}
+
+.icecream_item .img_box {
+  width: 160px;
+  background-color: #fff;
+  border: solid 1px #fcedf5;
+  border-radius: 40px;
+}
+
+.icecream_item img {
+  width: 100%;
+}
+
+.icecream_item .text_box {
+  max-width: calc(100% - 190px);
+  padding: 20px 0;
+}
+
+.icecream_item span {
+  font-size: 14px;
+  color: #f38ebe;
+  font-weight: 500;
+}
+
+.icecream_item h4 {
+  font-size: 26px;
+  margin: 6px 0 10px;
+}
+
+.icecream_item p {
+  font-size: 16px;
+  word-break: keep-all;
+  line-height: 1.5;
+}

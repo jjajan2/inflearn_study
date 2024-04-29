@@ -1,0 +1,135 @@
+[
+  {
+    "title": "피치 요거트",
+    "eng_title": "Peach Yogurt",
+    "content": "상큼한 복숭아 요거트, 복숭아 샤베트에 복숭아 과육이 가득!",
+    "category": "Fruit",
+    "src": "./img/icecream01.png"
+  },
+  {
+    "title": "망고탱고",
+    "eng_title": "Mango Tango",
+    "content": "부드럽고 상큼한 열대과일, 입 안 가득 진한 망고 향이 가득!",
+    "category": "Fruit",
+    "src": "./img/icecream02.png"
+  },
+  {
+    "title": "러브미",
+    "eng_title": "Loves Me",
+    "content": "바닐라향, 스트로베리, 블루베리 아이스크림에 색색의 롤리팝 캔디까지!",
+    "category": "Vanilla",
+    "src": "./img/icecream03.png"
+  },
+  {
+    "title": "아빠는 딸바봉",
+    "eng_title": "Papa & Daughter Ice Cream",
+    "content": "두가지 딸기 아이스크림과 바닐라향 아이스크림에 봉봉 프레첼이 쏘옥~!",
+    "category": "Vanilla",
+    "src": "./img/icecream04.png"
+  },
+  {
+    "title": "엄마는 외계인",
+    "eng_title": "Puss In Boots",
+    "content": "밀크 초콜릿, 다크 초콜릿, 화이트 무스 세 가지 아이스크림에 달콤 바삭한 초코볼이 더해진 아이스크림",
+    "category": "Chocolate",
+    "src": "./img/icecream05.png"
+  },
+  {
+    "title": "민트 초콜릿 칩",
+    "eng_title": "Mint Chocolate Chip",
+    "content": "쿨한 당신의 선택! 상쾌한 민트향에 초코칩까지!",
+    "category": "Chocolate",
+    "src": "./img/icecream06.png"
+  },
+  {
+    "title": "뉴욕 치즈케이크",
+    "eng_title": "New York CheeseCake",
+    "content": "부드럽게 즐기는 뉴욕식 정통 치즈케이크 아이스크림",
+    "category": "Cheese",
+    "src": "./img/icecream07.png"
+  },
+  {
+    "title": "레인보우 샤베트",
+    "eng_title": "Rainbow Sherbet",
+    "content": "상큼한 파인애플, 오렌지, 라즈베리가 만드는 일곱빛깔 무지개",
+    "category": "Fruit",
+    "src": "./img/icecream08.png"
+  },
+  {
+    "title": "체리쥬빌레",
+    "eng_title": "Cherries Jubilee",
+    "content": "체리과육이 탱글탱글 씹히는 체리 아이스크림",
+    "category": "Fruit",
+    "src": "./img/icecream09.png"
+  },
+  {
+    "title": "사랑에 빠진 딸기",
+    "eng_title": "Love Struck Strawberry",
+    "content": "딸기와 초콜릿이 치즈케이크에 반해버린 사랑의 맛",
+    "category": "Cheese",
+    "src": "./img/icecream10.png"
+  },
+  {
+    "title": "오레오 쿠키 앤 크림",
+    "eng_title": "Oreo Cookie´s n Cream",
+    "content": "부드러운 바닐라향 아이스크림에, 달콤하고 진한 오레오 쿠키가 듬뿍!",
+    "category": "Vanilla",
+    "src": "./img/icecream11.png"
+  },
+  {
+    "title": "베리베리 스트로베리",
+    "eng_title": "Very Berry Strawberry",
+    "content": "새콤상큼 딸기 과육이 듬뿍!",
+    "category": "Fruit",
+    "src": "./img/icecream12.png"
+  },
+  {
+    "title": "바람과 함께 사라지다",
+    "eng_title": "Twinberry CheeseCake",
+    "content": "블루베리와 딸기로 상큼함을 더한 치즈케이크 한 조각",
+    "category": "Cheese",
+    "src": "./img/icecream13.png"
+  },
+  {
+    "title": "바닐라",
+    "eng_title": "Vanilla",
+    "content": "부드럽고 깔끔한 바닐라 아이스크림",
+    "category": "Vanilla",
+    "src": "./img/icecream14.png"
+  },
+  {
+    "title": "피스타치오 아몬드",
+    "eng_title": "Pistachio Almond",
+    "content": "피스타치오와 아몬드가 만나 고소함이 두 배!",
+    "category": "Nuts",
+    "src": "./img/icecream15.png"
+  },
+  {
+    "title": "초콜릿",
+    "eng_title": "Chocolate",
+    "content": "진하고 부드러운 정통 초콜릿 아이스크림",
+    "category": "Chocolate",
+    "src": "./img/icecream16.png"
+  },
+  {
+    "title": "월넛",
+    "eng_title": "Walnut",
+    "content": "두뇌 발달에 좋은 고소한 호두가 듬뿍!",
+    "category": "Nuts",
+    "src": "./img/icecream17.png"
+  },
+  {
+    "title": "아몬드 봉봉",
+    "eng_title": "Almond Bon Bon",
+    "content": "입안 가득 즐거운 초콜릿, 아몬드로 더욱 달콤하게!",
+    "category": "Nuts",
+    "src": "./img/icecream18.png"
+  },
+  {
+    "title": "애플 민트",
+    "eng_title": "APPLE MINT",
+    "content": "상큼한 청사과와 시원한 민트향이 기분까지 상쾌하게",
+    "category": "Fruit",
+    "src": "./img/icecream19.png"
+  }
+]
