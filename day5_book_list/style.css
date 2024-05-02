@@ -129,3 +129,21 @@ h1 {
   height: 32px;
   padding: 0 10px;
 }
+
+.toast_message {
+  visibility: hidden;
+  opacity: 0;
+  background-color: #616161;
+  padding: 10px;
+  color: #fff;
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.25s;
+}
+
+.toast_message.show {
+  visibility: visible;
+  opacity: 1;
+}

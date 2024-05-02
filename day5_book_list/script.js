@@ -1,6 +1,7 @@
 const titleInput = document.querySelector(".title_input");
 const writerInput = document.querySelector(".writer_input");
 const bookListElement = document.querySelector(".book_list");
+const toastMessageElement = document.querySelector(".toast_message");
 
 const bookListData = JSON.parse(localStorage.getItem("bookList")) || [];
 
@@ -67,6 +68,8 @@ function addBookListData() {
 
     titleInput.value = "";
     writerInput.value = "";
+
+    toggleMessage("책이 기록되었습니다.");
   }
 }
 
@@ -78,14 +81,24 @@ function bookDataDelete(event) {
   bookListLoad();
 }
 
+function toggleMessage(message) {
+  toastMessageElement.textContent = message;
+  toastMessageElement.classList.add("show");
+
+  setTimeout(() => {
+    toastMessageElement.classList.remove("show");
+  }, 2000);
+}
+
 const sendButton = document.querySelector(".send");
 
 sendButton.addEventListener("click", addBookListData);
 
 bookListElement.addEventListener("click", (event) => {
   if (event.target.classList.contains("delete_button")) {
-    if (confirm("삭제하시겠습니까?")) {
+    if (confirm("기록을 삭제하시겠습니까?")) {
       bookDataDelete(event);
+      toggleMessage("기록이 삭제되었습니다.");
     }
   }
 });
