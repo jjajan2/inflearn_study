@@ -1,0 +1,131 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+* {
+  font-family: "Jeju Myeongjo", serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+}
+
+body {
+  background-color: #f5f3ef;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #a4322e;
+  border: 0;
+  color: #fff;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 0;
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  width: 36px;
+  height: 60px;
+  background-color: #a4322e;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.container::after {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: #f5f3ef;
+  position: absolute;
+  top: 44px;
+  right: 20px;
+  transform: rotate(45deg);
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form_input_area {
+  margin-bottom: 26px;
+}
+
+.form_input_area label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.form_input_area input {
+  outline: none;
+  width: 100%;
+  height: 44px;
+  background-color: #fff;
+  padding: 8px;
+  border: 0;
+  border-bottom: solid 1px #a4322e;
+}
+
+.send {
+  width: 100%;
+  height: 50px;
+}
+
+.book_area {
+  margin-top: 60px;
+  padding: 2px;
+  border: solid 2px #a4322e;
+}
+
+.book_list {
+  border: solid 1px #a4322e;
+}
+
+.book_list li {
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: solid 1px #ddbcbb;
+  text-align: center;
+}
+
+.book_list li:last-child {
+  border-bottom: 0;
+}
+
+.book_list li > * {
+  flex: 1;
+}
+
+.book_list li > * + * {
+  border-left: solid 1px #ddbcbb;
+}
+
+.book_list_title {
+  font-weight: 600;
+}
+
+.book_list .no_content {
+  justify-content: center;
+  height: 140px;
+  line-height: 140px;
+}
+
+.delete_button {
+  height: 32px;
+  padding: 0 10px;
+}

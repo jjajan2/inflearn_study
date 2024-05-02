@@ -9,21 +9,23 @@ const questionElement = document.querySelector(".question");
 const answerElements = document.querySelectorAll(".answer");
 const nextButton = document.querySelector(".next");
 
-roundElement.textContent = 1;
-questionElement.textContent = question[0].question;
-answerElements.forEach((element, index) => {
-  element.textContent = question[0].options[index];
-});
+function quizGameSet() {
+  roundElement.textContent = 1;
+  questionElement.textContent = question[0].question;
+  answerElements.forEach((element, index) => {
+    element.textContent = question[0].options[index];
+  });
 
-for (let i = 0; i < question.length; i++) {
-  const roundbar = document.createElement("div");
-  roundbar.classList.add("bar");
+  for (let i = 0; i < question.length; i++) {
+    const roundbar = document.createElement("div");
+    roundbar.classList.add("bar");
 
-  if (i == 0) {
-    roundbar.classList.add("filled");
+    if (i == 0) {
+      roundbar.classList.add("filled");
+    }
+
+    roundCntElement.appendChild(roundbar);
   }
-
-  roundCntElement.appendChild(roundbar);
 }
 
 function updateRoundBar() {
@@ -113,3 +115,5 @@ answerElements.forEach((answer, index) => {
 });
 
 nextButton.addEventListener("click", nextGame);
+
+quizGameSet();
