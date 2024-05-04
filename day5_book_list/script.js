@@ -47,7 +47,9 @@ function addBookList() {
   </li>`;
 }
 
-function addBookListData() {
+function addBookListData(event) {
+  event.preventDefault();
+
   const titleInputValue = titleInput.value;
   const writerInputValue = writerInput.value;
 
@@ -92,7 +94,9 @@ function toggleMessage(message) {
 
 const sendButton = document.querySelector(".send");
 
-sendButton.addEventListener("click", addBookListData);
+sendButton.addEventListener("click", (event) => {
+  addBookListData(event);
+});
 
 bookListElement.addEventListener("click", (event) => {
   if (event.target.classList.contains("delete_button")) {
