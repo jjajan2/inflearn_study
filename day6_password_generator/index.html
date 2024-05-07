@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/b384d89091.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Password Generator</h1>
+      <div class="copy_box">
+        <input type="text" name="copy" class="copy_input" readonly />
+        <button class="copy_button"><i class="fa-regular fa-copy"></i></button>
+      </div>
+      <form class="password_form">
+        <div class="length_box">
+          <input type="number" name="length" class="length_input" />
+          <input type="range" min="4" max="50" value="4" class="length_range" />
+        </div>
+        <ul class="password_type">
+          <li>
+            <input type="checkbox" id="numbers" name="numbers" />
+            <label for="numbers">Numbers [0-9]</label>
+          </li>
+          <li>
+            <input type="checkbox" id="lowercase" name="lowercase" />
+            <label for="lowercase">Lowercase Letters [a-z] </label>
+          </li>
+          <li>
+            <input type="checkbox" id="uppercase" name="uppercase" />
+            <label for="uppercase">Uppercase Letters [A-Z] </label>
+          </li>
+          <li>
+            <input type="checkbox" id="symbols" name="symbols" />
+            <label for="symbols">Symbols [!-*] </label>
+          </li>
+        </ul>
+        <button class="create_button">Create</button>
+      </form>
+    </section>
+  </body>
+  <script src="./script.js"></script>
+</html>
