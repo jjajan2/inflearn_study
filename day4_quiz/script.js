@@ -1,5 +1,4 @@
-import question from "./question.json" assert { type: "json" };
-
+let question;
 let roundCnt = 0;
 let correctCnt = 0;
 
@@ -8,6 +7,16 @@ const roundElement = document.querySelector(".round");
 const questionElement = document.querySelector(".question");
 const answerElements = document.querySelectorAll(".answer");
 const nextButton = document.querySelector(".next");
+
+fetch("./question.json")
+  .then((response) => response.json())
+  .then((data) => {
+    question = data;
+    quizGameSet();
+  })
+  .catch((error) => {
+    console.error(error);
+  });
 
 function quizGameSet() {
   roundElement.textContent = 1;
@@ -115,5 +124,3 @@ answerElements.forEach((answer, index) => {
 });
 
 nextButton.addEventListener("click", nextGame);
-
-quizGameSet();
