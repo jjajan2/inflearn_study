@@ -1,0 +1,13 @@
+[
+  { "sentence": "The quick brown fox jumps over the lazy dog." },
+  { "sentence": "She sells seashells by the seashore." },
+  { "sentence": "Fuzzy wuzzy was a bear, fuzzy wuzzy had no hair." },
+  { "sentence": "Peter Piper picked a peck of pickled peppers." },
+  { "sentence": "The cat in the hat came back." },
+  { "sentence": "I scream, you scream, we all scream for ice cream!" },
+  { "sentence": "Around the rugged rock the ragged rascal ran." },
+  {
+    "sentence": "How much wood would a woodchuck chuck if a woodchuck could chuck wood?"
+  },
+  { "sentence": "Can you can a can as a canner can can a can?" }
+]
