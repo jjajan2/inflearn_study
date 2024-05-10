@@ -12,17 +12,18 @@ function App() {
   const [editForm, setEditForm] = useState({ id: "", item: "", amount: "" });
   const [totalAmount, setTotalAmount] = useState(0);
 
-  console.log(budgetList);
+  useEffect(() => {
+    const budgetListData = localStorage.getItem("budgetList");
+    if (budgetListData) {
+      setbudgetList(JSON.parse(budgetListData));
+    }
+  }, []);
 
   useEffect(() => {
-    calculateTotalAmount();
-  }, [budgetList]);
-
-  function calculateTotalAmount() {
     let total = 0;
-    budgetList.map((budget) => (total += Number(budget.amount)));
+    budgetList.map((data) => (total += Number(data.amount)));
     setTotalAmount(total);
-  }
+  }, [budgetList]);
 
   function handleChangeAmountInput(event) {
     setAmountForm({
@@ -37,11 +38,18 @@ function App() {
     const newList = [...budgetList, amountForm];
     setAmountForm({ id: "", item: "", amount: "" });
     setbudgetList(newList);
+    localStorage.setItem("budgetList", JSON.stringify(newList));
   }
 
   function deleteBudget(id) {
     const newList = budgetList.filter((budget) => budget.id !== id);
     setbudgetList(newList);
+    localStorage.setItem("budgetList", JSON.stringify(newList));
+  }
+
+  function deleteAll() {
+    setbudgetList([]);
+    localStorage.setItem("budgetList", JSON.stringify([]));
   }
 
   function handleChangeEditInput(event) {
@@ -56,6 +64,7 @@ function App() {
     );
     setbudgetList(newList);
     setEditId(-1);
+    localStorage.setItem("budgetList", JSON.stringify(newList));
   }
 
   function editCancle() {
@@ -158,7 +167,12 @@ function App() {
         </div>
       )}
       <div className={style.totalAmount}>
-        총 합계 : <span>{totalAmount}</span>
+        <button class={style.deleteAllButton} onClick={deleteAll}>
+          전체 삭제
+        </button>
+        <p>
+          총 합계 : <span>{totalAmount}</span>
+        </p>
       </div>
     </div>
   );

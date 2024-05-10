@@ -69,7 +69,6 @@ button {
   gap: 20px;
   align-items: center;
   height: 44px;
-  padding: 0 10px;
 }
 
 .budgetInner > * {
@@ -91,13 +90,23 @@ button {
   border: 0;
   height: 32px;
   padding: 0 10px;
-  background-color: #666;
+  background-color: #777;
   color: #fff;
 }
 
 .totalAmount {
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 20px;
+}
+
+.deleteAllButton {
+  border: 0;
+  height: 40px;
+  background-color: #333;
+  padding: 0 20px;
+  color: #fff;
 }
 
 .totalAmount span {
