@@ -20,15 +20,24 @@ function App() {
   }, []);
 
   useEffect(() => {
-    let total = 0;
-    budgetList.map((data) => (total += Number(data.amount)));
+    const total = budgetList.reduce(
+      (acc, budget) => acc + Number(budget.amount),
+      0
+    );
     setTotalAmount(total);
   }, [budgetList]);
+
+  console.log(budgetList);
 
   function handleChangeAmountInput(event) {
     setAmountForm({
       ...amountForm,
-      id: budgetList.length + "" + Math.floor(Math.random() * 100 + 10),
+      id:
+        Date.now() +
+        "" +
+        budgetList.length +
+        "" +
+        Math.floor(Math.random() * 100 + 10),
       [event.target.name]: event.target.value,
     });
   }
