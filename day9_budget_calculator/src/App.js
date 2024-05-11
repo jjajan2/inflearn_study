@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import style from "./App.module.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import DefaultInputText from "./components/DefaultInputText/DefaultInputText";
+import SmallButton from "./components/SmallButton/SmallButton";
 
 function App() {
   const [amountForm, setAmountForm] = useState({
@@ -109,21 +111,20 @@ function App() {
         <div className={style.budgetFormBox}>
           <div className={style.budgetFormBoxItem}>
             <label>지출 항목</label>
-            <input
-              type="text"
-              name="item"
+            <DefaultInputText
+              type={"text"}
+              name={"item"}
               value={amountForm.item}
-              onChange={(event) => handleChangeAmountInput(event)}
+              onEvent={(event) => handleChangeAmountInput(event)}
             />
           </div>
           <div className={style.budgetFormBoxItem}>
             <label>금액</label>
-            <input
-              type="number"
-              name="amount"
-              className={style.amount}
+            <DefaultInputText
+              type={"number"}
+              name={"amount"}
               value={amountForm.amount}
-              onChange={(event) => handleChangeAmountInput(event)}
+              onEvent={(event) => handleChangeAmountInput(event)}
             />
           </div>
         </div>
@@ -136,33 +137,28 @@ function App() {
               {editId === budget.id ? (
                 <div className={style.budgetInner}>
                   <div className={style.budgetFormBoxItem}>
-                    <input
-                      type="text"
-                      name="item"
+                    <DefaultInputText
+                      type={"text"}
+                      name={"item"}
                       value={editForm.item}
-                      onChange={(event) => handleChangeEditInput(event)}
+                      onEvent={(event) => handleChangeEditInput(event)}
                     />
                   </div>
                   <div className={style.budgetFormBoxItem}>
-                    <input
-                      type="number"
-                      name="amount"
-                      className={style.amount}
+                    <DefaultInputText
+                      type={"number"}
+                      name={"amount"}
                       value={editForm.amount}
-                      onChange={(event) => handleChangeEditInput(event)}
+                      onEvent={(event) => handleChangeEditInput(event)}
                     />
                   </div>
 
                   <div className={style.buttons}>
-                    <button
-                      className="edit_button"
-                      onClick={() => editBudget(editForm.id)}
-                    >
-                      완료
-                    </button>
-                    <button className="delete_button" onClick={editCancle}>
-                      취소
-                    </button>
+                    <SmallButton
+                      text={"완료"}
+                      onEvent={() => editBudget(editForm.id)}
+                    />
+                    <SmallButton text={"취소"} onEvent={editCancle} />
                   </div>
                 </div>
               ) : (
@@ -171,9 +167,9 @@ function App() {
                   <p className={style.amount}>{budget.amount}</p>
 
                   <div className={style.buttons}>
-                    <button
-                      className="edit_button"
-                      onClick={() => {
+                    <SmallButton
+                      text={"수정"}
+                      onEvent={() => {
                         setEditId(budget.id);
                         setEditForm({
                           id: budget.id,
@@ -181,15 +177,11 @@ function App() {
                           amount: budget.amount,
                         });
                       }}
-                    >
-                      수정
-                    </button>
-                    <button
-                      className="delete_button"
-                      onClick={() => deleteBudget(budget.id)}
-                    >
-                      삭제
-                    </button>
+                    />
+                    <SmallButton
+                      text={"삭제"}
+                      onEvent={() => deleteBudget(budget.id)}
+                    />
                   </div>
                 </div>
               )}
