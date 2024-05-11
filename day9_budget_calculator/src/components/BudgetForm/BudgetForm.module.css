@@ -1,0 +1,28 @@
+.budgetFormBox {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.budgetFormBoxItem {
+  flex: 1;
+}
+
+.budgetFormBoxItem label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.budgetFormBoxItem .amount {
+  text-align: right;
+}
+
+.submitButton {
+  cursor: pointer;
+  width: 100%;
+  height: 44px;
+  border: 0;
+  background-color: #333;
+  color: #fff;
+}

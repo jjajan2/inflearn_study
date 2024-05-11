@@ -1,0 +1,21 @@
+.budgetInner {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 44px;
+}
+
+.budgetInner > * {
+  flex: 1;
+}
+
+.amount {
+  text-align: right;
+}
+
+.buttons {
+  flex: 0.6;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+}
